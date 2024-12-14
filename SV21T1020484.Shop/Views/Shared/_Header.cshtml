@@ -1,0 +1,86 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<header>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow justify-content-between">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <i class="bi bi-box-seam me-2"></i> MyWebsite
+            </a>
+
+            <!-- Toggler for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">
+                            <i class="bi bi-house-door"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-info-circle"></i> About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-briefcase"></i> Services
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-envelope"></i> Contact
+                        </a>
+                    </li>
+                    
+                </ul>
+                <!-- Login button -->
+                <ul class="navbar-nav mx-auto">
+                @{
+                    var userData = User.GetUserData();
+                
+
+                @if (userData != null)
+                {
+                     
+                        <li class="nav-item">
+                            <a class="nav-link" href="~/Account/Cart">
+                                <i class="bi bi-cart"></i> Cart
+                                <span class="badge bg-light text-dark position-relative" style="top: -3px;">3</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle nav-link" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Xin chào: @userData.DisplayName
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                                <li><a class="dropdown-item" href="~/Account/EditProfile">Sửa thông tin cá nhân</a></li>
+                                <li><a class="dropdown-item" href="~/Account/History">Lịch sửa mua hàng</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="~/Account/Logout">Đăng xuất</a></li>
+                            </ul>
+                        </li>
+                }
+                else
+                {
+                    <li class="nav-item">
+                        <a href="~/Account/Login" class="btn btn-outline-light">
+                            <i class="bi bi-box-arrow-in-right me-2"></i> Đăng nhập/ Đăng ký
+                        </a>
+                    </li>
+                }
+                }
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</header>

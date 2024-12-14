@@ -1,0 +1,83 @@
+﻿@model SV21T1020484.Shop.Models.ProductSearchInput
+@{
+    ViewData["Title"] = "Home Page";
+}
+    <main>
+        <section class="container my-5">
+            <div class="row">
+                <!-- Filter Form -->
+                <div class="col-md-3">
+                    <div class="card p-3">
+                        <h4 class="mb-3">Filter Products</h4>
+                        <form id="frmSearchInput" action="~/Home/Search" method="get">
+                        <input type="hidden" name="@nameof(Model.PageSize)" value="@Model.PageSize" />
+                        <input type="hidden" name="@nameof(Model.SupplierID)" value="" />
+                            <div class="mb-3">
+                                <label for="searchName" class="form-label">Product Name</label>
+                                <input name="@nameof(Model.SearchValue)" value="@Model.SearchValue" type="text" class="form-control" placeholder="Nhập mặt hàng hàng cần tìm" autofocus="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="priceRange" class="form-label">Price Range</label>
+                                <input type="number" class="form-control mb-2" id="minPrice" placeholder="Min price">
+                                <input type="number" class="form-control" id="maxPrice" placeholder="Max price">
+                            </div>
+                        <div class="mb-3">
+                            <label>Loại hàng:</label>
+                            <select class="form-control" name="@nameof(Model.CategoryID)">
+                                <option selected value="0">Chọn loại hàng</option>
+                                @foreach (var p in SV21T1020484.BusinessLayers.CommonDataService.ListOfCategories(out int rowCount, Model.Page, Model.PageSize, Model.SearchValue))
+                                {
+                                    if (p.CategoryID == Model.CategoryID)
+                                    {
+                                        <option selected value="@p.CategoryID">@p.CategoryName</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@p.CategoryID">@p.CategoryName</option>
+                                    }
+                                }
+                            </select>
+                        </div>
+                            <button type="submit" class="btn btn-primary w-100">Apply Filters</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Product List -->
+            <div id="searchResult" class="col-md-9">
+            </div>
+
+            </div>
+        </section>
+    </main>
+
+@section scripts {
+    <script>
+        function doSearch(page) {
+            var searchCondition = $("#frmSearchInput").serializeArray();
+            searchCondition.push({ name: "page", value: page });
+
+            var action = $("#frmSearchInput").prop("action");
+            var method = $("#frmSearchInput").prop("method");
+
+            $.ajax({
+                url: action,
+                type: method,
+                data: searchCondition,
+                success: function (data) {
+                    $("#searchResult").html(data);
+                }
+            });
+        }
+
+        $(document).ready(function () {
+            doSearch(@Model.Page);
+            $("#frmSearchInput").submit(function (e) {
+                e.preventDefault();
+                doSearch(1);
+            });
+        });
+
+    </script>
+}
+

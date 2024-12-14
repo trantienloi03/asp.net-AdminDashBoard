@@ -1,0 +1,32 @@
+﻿@model SV21T1020484.DomainModels.Shipper
+@{
+    ViewBag.Title = "Xóa sửa nhân viên giao hàng";
+}
+<div class="box box-danger">
+    <div class="box-body">
+        <form action="/Shipper/Delete/@Model.ShipperID" method="post">
+            <div class="form-group">
+                <label>Tên giao hàng</label>
+                <p class="form-control-static">@Model.ShipperName</p>
+            </div>
+            <div class="form-group">
+                <label>Điện thoai</label>
+                <p class="form-control-static">@Model.Phone</p>
+            </div>
+            <div class="form-group text-right">
+                @if (SV21T1020484.BusinessLayers.CommonDataService.InUseShipper(Model.ShipperID) == false)
+                {
+                    <button type="submit" class="btn btn-danger">
+                        <i class="fa fa-trash"></i>
+                        Xác nhận xóa
+                    </button>
+                }
+                <a href="~/Shipper" class="btn btn-default" >Quay lại</a>
+            </div>
+
+        </form>
+    </div>
+</div>
+@{
+}
+

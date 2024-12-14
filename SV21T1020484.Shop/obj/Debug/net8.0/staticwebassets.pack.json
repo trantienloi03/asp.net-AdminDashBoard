@@ -1,0 +1,581 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\SV21T1020484.Shop.bundle.scp.css",
+      "PackagePath": "staticwebassets\\SV21T1020484.Shop.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638666070951876552-nv03 - Copy (2).png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638666070951876552-nv03 - Copy (2).png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638666070951876552-nv03 - Copy - Copy.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638666070951876552-nv03 - Copy - Copy.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638666070951876552-nv03 - Copy.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638666070951876552-nv03 - Copy.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638666070951876552-nv03.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638666070951876552-nv03.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638666073282688527-nv03 - Copy (2).png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638666073282688527-nv03 - Copy (2).png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638666073282688527-nv03 - Copy - Copy.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638666073282688527-nv03 - Copy - Copy.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638666073282688527-nv03 - Copy.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638666073282688527-nv03 - Copy.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638666073282688527-nv03.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638666073282688527-nv03.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638666138717323547-nv01 - Copy (2).png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638666138717323547-nv01 - Copy (2).png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638666138717323547-nv01 - Copy - Copy.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638666138717323547-nv01 - Copy - Copy.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638666138717323547-nv01 - Copy.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638666138717323547-nv01 - Copy.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638666138717323547-nv01.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638666138717323547-nv01.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638666140276411883-nv01 - Copy (2).png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638666140276411883-nv01 - Copy (2).png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638666140276411883-nv01 - Copy - Copy.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638666140276411883-nv01 - Copy - Copy.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638666140276411883-nv01 - Copy.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638666140276411883-nv01 - Copy.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638666140276411883-nv01.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638666140276411883-nv01.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638666141330280872-nv01 - Copy (2).png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638666141330280872-nv01 - Copy (2).png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638666141330280872-nv01 - Copy - Copy.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638666141330280872-nv01 - Copy - Copy.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638666141330280872-nv01 - Copy.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638666141330280872-nv01 - Copy.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638666141330280872-nv01.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638666141330280872-nv01.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638668269107497022-nv01.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638668269107497022-nv01.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638668277356746201-nv01.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638668277356746201-nv01.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638668277850645656-nv01.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638668277850645656-nv01.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638668280255755733-nv01.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638668280255755733-nv01.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638668297894050790-nv01.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638668297894050790-nv01.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638668302670479383-nv01.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638668302670479383-nv01.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638668305624277038-nv01.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638668305624277038-nv01.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638670833764052944-nv02.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638670833764052944-nv02.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638671326195427089_nv03.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638671326195427089_nv03.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638671326400082610_nophotoo.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638671326400082610_nophotoo.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638672012323070537-nophotoo - Copy.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638672012323070537-nophotoo - Copy.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638672012323070537-nophotoo.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638672012323070537-nophotoo.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638673624669322164-nophotoo - Copy.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638673624669322164-nophotoo - Copy.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638673624669322164-nophotoo.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638673624669322164-nophotoo.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638676284814636082-nv02 - Copy.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638676284814636082-nv02 - Copy.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638676284814636082-nv02.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638676284814636082-nv02.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638676932004026408-nv03 - Copy.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638676932004026408-nv03 - Copy.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638676932004026408-nv03.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638676932004026408-nv03.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638676932194247299-nv01 - Copy.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638676932194247299-nv01 - Copy.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638676932194247299-nv01.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638676932194247299-nv01.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638676932300358338-nv02 - Copy.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638676932300358338-nv02 - Copy.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638676932300358338-nv02.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\638676932300358338-nv02.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\macbook - Copy.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\macbook - Copy.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\macbook.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\macbook.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\nophotoo - Copy.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\nophotoo - Copy.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\nophotoo.png",
+      "PackagePath": "staticwebassets\\Image\\Products\\nophotoo.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638668310359979739-nv02.png",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638668310359979739-nv02.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638668310480276231-images.jpg",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638668310480276231-images.jpg"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638668311501510780-images.jpg",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638668311501510780-images.jpg"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638668313937866141-images.jpg",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638668313937866141-images.jpg"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638668322803862645-images.jpg",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638668322803862645-images.jpg"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638668326511426497-images.jpg",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638668326511426497-images.jpg"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638668328870558836-images.jpg",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638668328870558836-images.jpg"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638668328984051918-images.jpg",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638668328984051918-images.jpg"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638668329848594332-nophotoo.png",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638668329848594332-nophotoo.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638668330890065729-nophotoo.png",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638668330890065729-nophotoo.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638668447658828333-images.jpg",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638668447658828333-images.jpg"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638668447758699173-images.jpg",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638668447758699173-images.jpg"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638669064220014219-nv01.png",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638669064220014219-nv01.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638670851046933929-images.jpg",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638670851046933929-images.jpg"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638670857490243604-images.jpg",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638670857490243604-images.jpg"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638671018356766950-images.jpg",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638671018356766950-images.jpg"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638671334448826267_nv02.png",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638671334448826267_nv02.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638671371775855041_nv01.png",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638671371775855041_nv01.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638671384032605044_images.jpg",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638671384032605044_images.jpg"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638671405738376250_nophotoo.png",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638671405738376250_nophotoo.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638671406313851182_nophotoo.png",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638671406313851182_nophotoo.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638671412431860060_nophotoo.png",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638671412431860060_nophotoo.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638671412753228311_nophotoo.png",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638671412753228311_nophotoo.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638671420111528816_nophotoo.png",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638671420111528816_nophotoo.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638671420823654910_nophotoo.png",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638671420823654910_nophotoo.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638671424454651283_nv01.png",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638671424454651283_nv01.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638672008638453184_images.jpg",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638672008638453184_images.jpg"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638672013784255554_nv02.png",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638672013784255554_nv02.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638677084199035908_nv01.png",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638677084199035908_nv01.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638677084423766568_nv02.png",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638677084423766568_nv02.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638677228101637618_nophotoo.png",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638677228101637618_nophotoo.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\638689902801793270_nv01.png",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\638689902801793270_nv01.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\productphotos\\nophotoo.png",
+      "PackagePath": "staticwebassets\\Image\\productphotos\\nophotoo.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SV21T1020484.Shop.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.SV21T1020484.Shop.props",
+      "PackagePath": "build\\SV21T1020484.Shop.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.SV21T1020484.Shop.props",
+      "PackagePath": "buildMultiTargeting\\SV21T1020484.Shop.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.SV21T1020484.Shop.props",
+      "PackagePath": "buildTransitive\\SV21T1020484.Shop.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
