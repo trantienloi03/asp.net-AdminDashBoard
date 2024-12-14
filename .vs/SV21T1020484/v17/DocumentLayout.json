@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "D:\\LTUDweb\\SV21T1020484\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{075EAFC1-ACED-4230-992C-FEDF3B55A57A}|SV21T1020484.Shop\\SV21T1020484.Shop.csproj|D:\\LTUDweb\\SV21T1020484\\sv21t1020484.shop\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{075EAFC1-ACED-4230-992C-FEDF3B55A57A}|SV21T1020484.Shop\\SV21T1020484.Shop.csproj|d:\\ltudweb\\sv21t1020484\\sv21t1020484.shop\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{075EAFC1-ACED-4230-992C-FEDF3B55A57A}|SV21T1020484.Shop\\SV21T1020484.Shop.csproj|solutionrelative:sv21t1020484.shop\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -31,7 +31,7 @@
       "RelativeMoniker": "D:0:0:{F7B48E95-1EBE-4738-A45F-4FCFA80BA06F}|SV21T1020484.DataLayers\\SV21T1020484.DataLayers.csproj|solutionrelative:sv21t1020484.datalayers\\icartdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{075EAFC1-ACED-4230-992C-FEDF3B55A57A}|SV21T1020484.Shop\\SV21T1020484.Shop.csproj|d:\\ltudweb\\sv21t1020484\\sv21t1020484.shop\\views\\account\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{075EAFC1-ACED-4230-992C-FEDF3B55A57A}|SV21T1020484.Shop\\SV21T1020484.Shop.csproj|D:\\LTUDweb\\SV21T1020484\\sv21t1020484.shop\\views\\account\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{075EAFC1-ACED-4230-992C-FEDF3B55A57A}|SV21T1020484.Shop\\SV21T1020484.Shop.csproj|solutionrelative:sv21t1020484.shop\\views\\account\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -230,8 +230,7 @@
               "RelativeToolTip": "SV21T1020484.Shop\\Views\\Account\\Cart.cshtml",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAACEAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-12T15:19:21.275Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T15:19:21.275Z"
             },
             {
               "$type": "Document",
@@ -279,8 +278,7 @@
               "RelativeToolTip": "SV21T1020484.Shop\\Views\\Shared\\_Header.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-12T07:34:18.321Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T07:34:18.321Z"
             },
             {
               "$type": "Document",
@@ -292,8 +290,7 @@
               "RelativeToolTip": "SV21T1020484.BusinessLayers\\CartDataService.cs",
               "ViewState": "AQIAABcAAAAAAAAAAAAgwCgAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T13:36:28.695Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T13:36:28.695Z"
             },
             {
               "$type": "Document",
@@ -305,8 +302,7 @@
               "RelativeToolTip": "SV21T1020484.DataLayers\\ICartDAL.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAWwA4AAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T13:52:52.622Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T13:52:52.622Z"
             },
             {
               "$type": "Document",
@@ -330,8 +326,7 @@
               "RelativeToolTip": "SV21T1020484.DataLayers\\Sql\\CartDAL.cs",
               "ViewState": "AQIAACQAAAAAAAAAAADwvzEAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T13:06:22.028Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T13:06:22.028Z"
             },
             {
               "$type": "Document",
@@ -355,8 +350,7 @@
               "RelativeToolTip": "SV21T1020484.DomainModels\\Cart.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T13:01:54.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T13:01:54.26Z"
             },
             {
               "$type": "Document",
@@ -441,8 +435,7 @@
               "RelativeToolTip": "SV21T1020484.Shop\\Views\\Home\\Index.cshtml",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-12T07:34:09.713Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T07:34:09.713Z"
             },
             {
               "$type": "Document",
