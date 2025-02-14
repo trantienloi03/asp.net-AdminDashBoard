@@ -38,7 +38,22 @@ namespace SV21T1020484.DataLayers.Sql
 
         public bool ChangePassword(string username, string oldPassword, string newPassWord)
         {
-            throw new NotImplementedException();
+            bool result = false;
+            using (var cn = OpenConnection())
+            {
+                var sql = @"update Customers 
+                            set Password = @newPassword 
+                            where Email = @userName and Password = @oldPassword";
+                var parameters = new
+                {
+                    userName = username,
+                    oldPassword = oldPassword,
+                    newPassword = newPassWord
+                };
+                result = cn.Execute(sql: sql, param: parameters, commandType: System.Data.CommandType.Text) > 0;
+                cn.Close();
+            }
+            return result;
         }
     }
 }

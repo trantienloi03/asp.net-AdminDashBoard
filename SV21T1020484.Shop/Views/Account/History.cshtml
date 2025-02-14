@@ -1,3 +1,64 @@
-﻿@{
+﻿@model List<SV21T1020484.DomainModels.ViewOrder>
+@{
 }
-Lịch sử mua hàng
+
+<div class="container my-5">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb bg-light p-3 rounded">
+            <li class="breadcrumb-item"><a href="/" class="text-decoration-none text-primary">Trang chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Lịch sử</li>
+        </ol>
+    </nav>
+
+    <table class="table table-bordered table-hover shadow-sm">
+        <thead class="table-dark">
+            <tr>
+                <th class="text-center">Mã đơn hàng</th>
+                <th class="text-center">Ngày Mua</th>
+                <th class="text-center">Trạng Thái</th>
+                <th class="text-center">Thao Tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                foreach (var item in Model)
+                {
+                    string statusClass = item.Status switch
+                    {
+                        SV21T1020484.DomainModels.Constants.ORDER_INIT => "badge bg-secondary",
+                        SV21T1020484.DomainModels.Constants.ORDER_ACCEPTED => "badge bg-info",
+                        SV21T1020484.DomainModels.Constants.ORDER_SHIPPING => "badge bg-primary",
+                        SV21T1020484.DomainModels.Constants.ORDER_FINISHED => "badge bg-success",
+                        SV21T1020484.DomainModels.Constants.ORDER_CANCEL => "badge bg-danger",
+                        SV21T1020484.DomainModels.Constants.ORDER_REJECTED => "badge bg-warning",
+                        _ => "badge bg-dark"
+                    };
+                    <tr class="align-middle">
+                        <td class="text-center">@item.OrderID</td>
+                        <td class="text-center">@item.OrderTime.ToString("dd/MM/yyyy")</td>
+                        <td class="text-center">
+                            <span class="@statusClass">@item.StatusDescription</span>
+                        </td>
+                        <td class="text-center">
+                            <a class="btn btn-sm btn-outline-primary me-2" href="~/Account/EditOrder/@item.OrderID">
+                                <i class="bi bi-info-circle"></i> Chi tiết
+                            </a>
+                            @if (item.Status == SV21T1020484.DomainModels.Constants.ORDER_INIT)
+                            {
+                                <a class="btn btn-sm btn-outline-danger" href="~/Account/Cancel?id=@item.OrderID">
+                                    <i class="bi bi-x-circle"></i> Hủy
+                                </a>
+                            }
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+<style>
+    .table-hover tbody tr:hover {
+        background-color: #f8f9fa;
+    }
+</style>

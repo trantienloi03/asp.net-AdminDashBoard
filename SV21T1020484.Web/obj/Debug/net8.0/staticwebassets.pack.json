@@ -89,6 +89,10 @@
       "PackagePath": "staticwebassets\\images\\employees\\638690084979384092-images.jpg"
     },
     {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Web\\wwwroot\\images\\employees\\638695915261270842-images.jpg",
+      "PackagePath": "staticwebassets\\images\\employees\\638695915261270842-images.jpg"
+    },
+    {
       "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Web\\wwwroot\\images\\employees\\nophoto.jpg",
       "PackagePath": "staticwebassets\\images\\employees\\nophoto.jpg"
     },
@@ -219,6 +223,26 @@
     {
       "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Web\\wwwroot\\images\\productphotos\\638689902801793270_nv01.png",
       "PackagePath": "staticwebassets\\images\\productphotos\\638689902801793270_nv01.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Web\\wwwroot\\images\\productphotos\\638695917640818333_nv02.png",
+      "PackagePath": "staticwebassets\\images\\productphotos\\638695917640818333_nv02.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Web\\wwwroot\\images\\productphotos\\638696154403702826_nv02.png",
+      "PackagePath": "staticwebassets\\images\\productphotos\\638696154403702826_nv02.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Web\\wwwroot\\images\\productphotos\\638696154558321791_nv01.png",
+      "PackagePath": "staticwebassets\\images\\productphotos\\638696154558321791_nv01.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Web\\wwwroot\\images\\productphotos\\638702408687998953_11.png",
+      "PackagePath": "staticwebassets\\images\\productphotos\\638702408687998953_11.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Web\\wwwroot\\images\\productphotos\\638702427080866916_6.png",
+      "PackagePath": "staticwebassets\\images\\productphotos\\638702427080866916_6.png"
     },
     {
       "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Web\\wwwroot\\images\\productphotos\\nophotoo.png",
@@ -391,6 +415,10 @@
     {
       "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Web\\wwwroot\\images\\products\\638676932300358338-nv02.png",
       "PackagePath": "staticwebassets\\images\\products\\638676932300358338-nv02.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Web\\wwwroot\\images\\products\\638695917338400376-images.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\638695917338400376-images.jpg"
     },
     {
       "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Web\\wwwroot\\images\\products\\macbook - Copy.png",

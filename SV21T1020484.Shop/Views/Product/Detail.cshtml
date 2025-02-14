@@ -2,71 +2,146 @@
 @{
 }
 <main class="container my-5">
-    <h3 class="text-center mb-4">Chi tiết sản phẩm</h3>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Trang chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Sản phẩm</li>
+        </ol>
+    </nav>
     <div class="row">
         <!-- Product Images -->
         <div class="col-md-6">
             <div class="text-center">
-                <img id="mainImage" src="~/Image/Products/@Model.Photo" class="img-fluid border mb-3" alt="Product Image" style="max-height: 400px; object-fit: contain;">
+                <img id="mainImage" src="~/Image/Photo/@Model.Photo" class="img-fluid border mb-3" alt="Product Image" style="max-height: 400px; object-fit: contain;">
             </div>
             <div class="d-flex justify-content-center">
                 @{
-                    <img id="mainImage" src="~/Image/Products/@Model.Photo" class="img-fluid border mb-3 thumbnail" alt="Product Image" style="width: 80px; height: 80px; object-fit: cover; cursor: pointer;">
-                    var photos = SV21T1020484.BusinessLayers.ProductDataService.ListProductPhotos(Model.ProductID);
-                    if (photos.Count > 0)
-                    {
-                        foreach (var item in photos)
+                    <img id="mainImage" src="~/Image/Photo/@Model.Photo" class="img-fluid border mb-3 thumbnail" alt="Product Image" style="width: 80px; height: 80px; object-fit: cover; cursor: pointer;">
+             
+                        foreach (var item in SV21T1020484.BusinessLayers.ProductDataService.ListProductPhotos(Model.ProductID))
                         {
-                            <img src="~/Image/productphotos/@item.Photo" class="img-thumbnail me-2 thumbnail" alt="Thumbnail" style="width: 80px; height: 80px; object-fit: cover; cursor: pointer;">
+                            <img src="~/Image/productphotos/@item.Photo" class="img-thumbnail me-2 thumbnail" alt="Image" style="width: 80px; height: 80px; object-fit: cover; cursor: pointer;">
                         }
-                    }
-                    else
-                    {
-                        <p class="text-muted">Không có ảnh nào khác</p>
-                    }
+                   
                 }
             </div>
         </div>
 
         <!-- Product Details -->
         <div class="col-md-6">
+            
             <h1 class="fw-bold">@Model.ProductName</h1>
             <p class="text-muted">Danh mục: @SV21T1020484.BusinessLayers.CommonDataService.GetCategory(Model.CategoryID).CategoryName</p>
             <h3 class="text-danger fw-bold">@Model.Price.ToString("N0") VNĐ</h3>
             <p class="mt-3">@Model.ProductDescription</p>
-            <div class="d-flex align-items-center mb-3">
-                <label for="quantity" class="me-3">Số lượng:</label>
-                <input id="quantity" type="number" class="form-control text-center" value="1" min="1" style="width: 70px;">
-            </div>
-            <button class="btn btn-primary btn-lg w-100">Thêm vào giỏ hàng</button>
+            <form action="~/Product/AddToCart" method="get">
+                <input type="hidden" name="productID" value="@Model.ProductID" />
+                <div class="d-flex align-items-center mb-3">
+                    <label for="quantity" class="me-3">Số lượng:</label>
+                    <input id="quantity" type="number" name="quantity" class="form-control text-center" value="1" min="1" style="width: 70px;">
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg w-100">Thêm vào giỏ hàng</button>
+            </form>
         </div>
     </div>
 
     <hr class="my-5" />
 
-    <!-- Product Attributes -->
-    <div class="product-attributes">
-        <h4 class="mb-4">Thông số sản phẩm</h4>
-        <ul class="list-group">
-            @{
-                var attributes = SV21T1020484.BusinessLayers.ProductDataService.ListProductAttributes(Model.ProductID);
-                if (attributes.Count > 0)
-                {
-                    foreach (var item in attributes)
+    <!-- Product Attributes with Tab Control -->
+    <div class="product-details">
+        <ul class="nav nav-tabs" id="productTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="specifications-tab" data-bs-toggle="tab" data-bs-target="#specifications" type="button" role="tab" aria-controls="specifications" aria-selected="true">Thông số sản phẩm</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="false">Mô tả chi tiết</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="productTabContent">
+            <div class="tab-pane fade show active" id="specifications" role="tabpanel" aria-labelledby="specifications-tab">
+                <ul class="list-group mt-3">
+                    @{
+                        var attributes = SV21T1020484.BusinessLayers.ProductDataService.ListProductAttributes(Model.ProductID);
+                        if (attributes.Count > 0)
+                        {
+                            foreach (var item in attributes)
+                            {
+                                <li class="list-group-item">
+                                    <strong>@item.AttributeName:</strong> @item.AttributeValue
+                                </li>
+                            }
+                        }
+                        else
+                        {
+                            <li class="list-group-item text-muted">Không có thông số nào</li>
+                        }
+                    }
+                </ul>
+            </div>
+            <div class="tab-pane fade" id="description" role="tabpanel" aria-labelledby="description-tab">
+                <div class="mt-3">
+                    <p>@Model.ProductDescription</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="my-5" />
+
+    <!-- Related Products Slider -->
+    <div class="related-products mb-5">
+        <h4 class="mb-4">Sản phẩm tương tự</h4>
+        <div id="relatedProductsCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                @{
+                    var products = SV21T1020484.BusinessLayers.ProductDataService.getSimilarProducts(Model.CategoryID);
+                    var totalProducts = products.Count();
+                    var itemsPerSlide = 5; // Số sản phẩm mỗi slide
+                    var slideCount = (int)Math.Ceiling((double)totalProducts / itemsPerSlide);
+
+                    for (int i = 0; i < slideCount; i++)
                     {
-                        <li class="list-group-item">
-                            <strong>@item.AttributeName:</strong> @item.AttributeValue
-                        </li>
+                        var isActive = i == 0 ? "active" : "";
+                        <div class="carousel-item @isActive">
+                            <div class="row">
+                                @foreach (var product in products.Skip(i * itemsPerSlide).Take(itemsPerSlide))
+                                {
+                                    <div class="col-md-2">
+                                        <div class="card">
+                                            <img src="~/Image/Photo/@product.Photo" class="card-img-top" alt="@product.ProductName">
+                                            <div class="card-body">
+                                                <h6 class="card-title">
+                                                    <a href="/Product/Detail?productID=@product.ProductID">@product.ProductName</a>
+                                                </h6>
+                                                <p class="card-text">@product.Price.ToString("N0") VNĐ</p>
+                                                <a href="~/Product/AddToCart?productID=@product.ProductID" class="btn btn-primary">Thêm vào giỏ</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
                     }
                 }
-                else
-                {
-                    <li class="list-group-item text-muted">Không có thông số nào</li>
-                }
-            }
-        </ul>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#relatedProductsCarousel" data-bs-slide="prev" style="background-color: rgba(0,0,0,0);">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#relatedProductsCarousel" data-bs-slide="next" style="background-color: rgba(0,0,0,0);">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </div>
+
+
+   
+  </div>
+</div>
 </main>
+
+
 
 @section scripts {
     <script>

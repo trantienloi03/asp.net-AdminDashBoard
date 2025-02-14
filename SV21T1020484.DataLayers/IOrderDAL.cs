@@ -25,6 +25,7 @@ namespace SV21T1020484.DataLayers
         /// Bổ sung đơn hàng mới
         /// </summary>
         int Add(Order data);
+        int Init(Order data);
         /// <summary>
         /// Cập nhật thông tin của đơn hàng
         /// </summary>
@@ -51,5 +52,6 @@ namespace SV21T1020484.DataLayers
         /// Xóa 1 mặt hàng ra khỏi đơn hàng
         /// </summary>
         bool DeleteDetail(int orderID, int productID);
+        IList<ViewOrder> ListOrderByCustomerID(int customerID);
     }
 }

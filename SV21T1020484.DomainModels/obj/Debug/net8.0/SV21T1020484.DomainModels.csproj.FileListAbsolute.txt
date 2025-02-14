@@ -10,3 +10,4 @@ D:\LTUDweb\SV21T1020484\SV21T1020484.DomainModels\obj\Debug\net8.0\refint\SV21T1
 D:\LTUDweb\SV21T1020484\SV21T1020484.DomainModels\obj\Debug\net8.0\SV21T1020484.DomainModels.pdb
 D:\LTUDweb\SV21T1020484\SV21T1020484.DomainModels\obj\Debug\net8.0\ref\SV21T1020484.DomainModels.dll
 D:\LTUDweb\SV21T1020484\SV21T1020484.DomainModels\obj\Debug\net8.0\SV21T1020484.DomainModels.csproj.AssemblyReference.cache
+D:\LTUDweb\SV21T1020484\SV21T1020484.DomainModels\obj\Debug\net8.0\SV21T1020484.DomainModels.sourcelink.json

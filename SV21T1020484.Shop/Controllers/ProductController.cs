@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SV21T1020484.BusinessLayers;
 using SV21T1020484.DomainModels;
@@ -22,7 +23,7 @@ namespace SV21T1020484.Shop.Controllers
             return View(model);
         }
         [Authorize]
-        public IActionResult AddtoCart(int productID)
+        public IActionResult AddtoCart(int ProductID, int quantity)
         {
             var customer = User.GetUserData();
             var Cart = CartDataService.getCartByCustomerID(Convert.ToInt32(customer.UserId));
@@ -35,33 +36,39 @@ namespace SV21T1020484.Shop.Controllers
                 CartDataService.AddCart(Cart);
             }
             Cart = CartDataService.getCartByCustomerID(Convert.ToInt32(customer.UserId));
-            var product = ProductDataService.GetProductById(productID);
+            var product = ProductDataService.GetProductById(ProductID);
             if (product != null)
             {
-                var cartID = Cart.CartId;
-                var exists = CartDataService.checkProductExists(cartID, product.ProductID);
-                if(exists == null)
+                var CartID = Cart.CartId;
+                int productID = product.ProductID;
+                var exists = CartDataService.checkProductExists(CartID, productID);
+                if (exists == null)
                 {
-                    var cartDetail = new Cartdetail();
-                    cartDetail.Quantity = 1;
-                    cartDetail.Price = product.Price;
-                    cartDetail.CartId = Cart.CartId;
-                    cartDetail.ProductId = product.ProductID;
-                    int id = CartDataService.AddCartDetail(cartDetail);
+                    var data = new Cartdetail();
+                    data.Quantity = quantity;
+                    data.Price = product.Price;
+                    data.CartId = Cart.CartId;
+                    data.ProductId = product.ProductID;
+                    int id = CartDataService.AddCartDetail(data);
                     int sum = Cart.Sum + 1;
                     Cart.Sum = sum;
                     bool kq = CartDataService.SaveCart(Cart);
+
+                    var user = User.GetUserData();
+                    int userID = Convert.ToInt32(user.UserId);
+
+                    HttpContext.Session.SetInt32("CartItemCount", Cart.Sum);
                 }
                 else
                 {
-                    bool id = CartDataService.SaveCartdetail(Cart.CartId, product.ProductID, exists.Quantity + 1);
+                    int Quantity = exists.Quantity + quantity;
+                    bool id = CartDataService.SaveCartdetail(CartID, ProductID, Quantity);
                 }
-                
-            }
 
+            }
             return RedirectToAction("Index", "Home");
         }
-       
+
 
     }
 }

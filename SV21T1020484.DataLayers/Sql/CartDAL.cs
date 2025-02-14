@@ -10,7 +10,7 @@ namespace SV21T1020484.DataLayers.Sql
         {
         }
 
-        public int Add(Cart data)
+        public int Add(Cart Cart)
         {
             int id = 0;
 
@@ -21,8 +21,8 @@ namespace SV21T1020484.DataLayers.Sql
                                     select SCOPE_IDENTITY();";
                 var parameters = new
                 {
-                    Sum = data.Sum,
-                    CustomerID = data.CustomerID
+                    Sum = Cart.Sum,
+                    CustomerID = Cart.CustomerID
                 };
                 id = connection.ExecuteScalar<int>(sql: sql, param: parameters, commandType: System.Data.CommandType.Text);
                 connection.Close();
@@ -45,7 +45,7 @@ namespace SV21T1020484.DataLayers.Sql
                     Price = data.Price,
                     CartID = data.CartId,
                     ProductID = data.ProductId
-                   
+
                 };
                 id = connection.ExecuteScalar<int>(sql: sql, param: parameters, commandType: System.Data.CommandType.Text);
                 connection.Close();
@@ -53,7 +53,7 @@ namespace SV21T1020484.DataLayers.Sql
             return id;
         }
 
-        public Cartdetail? checkProductExists(int cartID, int productID)
+        public Cartdetail? checkProductExists(int CartID, int productID)
         {
             Cartdetail? data = new Cartdetail();
 
@@ -62,8 +62,8 @@ namespace SV21T1020484.DataLayers.Sql
                 var sql = @"select * from Cartdetails where CartID = @CartID and ProductID = @ProductID";
                 var parameters = new
                 {
-                    CartID = cartID,
-                    ProductID = productID 
+                    CartID = CartID,
+                    ProductID = productID
 
                 };
                 data = connection.QueryFirstOrDefault<Cartdetail>(sql: sql, param: parameters, commandType: System.Data.CommandType.Text);
@@ -99,9 +99,28 @@ namespace SV21T1020484.DataLayers.Sql
             throw new NotImplementedException();
         }
 
-        public bool DeleteDetail(int cartID, int productID)
+        public bool DeleteDetail(int cartID, int cartDetailID)
         {
-            throw new NotImplementedException();
+            bool result = false;
+
+            using (var connection = OpenConnection())
+            {
+                var sql = @"Delete Cartdetails 
+                            where CartDetailID = @CartDetailID
+                            Update Carts 
+                                set Sum = CASE WHEN Sum > 0 THEN Sum - 1 ELSE 0 END
+                            Where CartID = @CartID";
+                var parameters = new
+                {
+                    
+                    CartDetailID = cartDetailID,
+                    CartID = cartID
+
+                };
+                result = connection.Execute(sql: sql, param: parameters, commandType: System.Data.CommandType.Text) > 0;
+                connection.Close();
+            }
+            return result;
         }
 
         public Cart GetByID(int customerID)
@@ -136,28 +155,28 @@ namespace SV21T1020484.DataLayers.Sql
             throw new NotImplementedException();
         }
 
-        public bool SaveDetail(int cartID, int productID, int quantity)
+        public bool SaveDetail(int cartDetailID, int productID, int quantity)
         {
             bool result = false;
 
             using (var connection = OpenConnection())
             {
                 var sql = @"update Cartdetails set Quantity = @Quantity 
-                            where CartID = @CartID and ProductID = @ProductID";
+                            where CartdetailID = @CartDetailID and ProductID = @ProductID";
                 var parameters = new
                 {
                     Quantity = quantity,
-                    CartID = cartID,
+                    CartDetailID = cartDetailID,
                     ProductID = productID
 
-                }; 
+                };
                 result = connection.Execute(sql: sql, param: parameters, commandType: System.Data.CommandType.Text) > 0;
                 connection.Close();
             }
             return result;
         }
 
-        public bool Update(Cart data)
+        public bool Update(Cart Cart)
         {
             bool result = false;
 
@@ -167,15 +186,40 @@ namespace SV21T1020484.DataLayers.Sql
                             where CustomerID = @CustomerID and CartID = @CartID";
                 var parameters = new
                 {
-                    Sum = data.Sum,
-                    CustomerID = data.CustomerID,
-                    CartID = data.CartId
+                    Sum = Cart.Sum,
+                    CustomerID = Cart.CustomerID,
+                    CartID = Cart.CartId
 
                 };
                 result = connection.Execute(sql: sql, param: parameters, commandType: System.Data.CommandType.Text) > 0;
                 connection.Close();
             }
             return result;
+        }
+        public List<ViewCart> GetViewCarts(int userID)
+        {
+            List<ViewCart> viewCarts = new List<ViewCart>();
+            using (var connection = OpenConnection())
+            {
+                var sql = @"SELECT TOP (1000) [CartID]
+                              ,[CartdetailID]
+                              ,[ProductID]
+                              ,[CustomerID]
+                              ,[ProductName]
+                              ,[Photo]
+                              ,[Quantity]
+                              ,[Price]
+                              ,[Total]
+                          FROM [LiteCommerceDB].[dbo].[ViewCart]
+                          Where CustomerID = @CustomerID";
+                var parameters = new
+                {
+                    CustomerID = userID,
+
+                };
+                viewCarts = connection.Query<ViewCart>(sql: sql, param: parameters,commandType: System.Data.CommandType.Text).ToList();
+            }
+            return viewCarts;
         }
     }
 }

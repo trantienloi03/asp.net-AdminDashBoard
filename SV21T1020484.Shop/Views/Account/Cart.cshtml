@@ -1,34 +1,131 @@
-﻿
+﻿@model List<SV21T1020484.DomainModels.ViewCart>
 @{
+    decimal total = 0;
 }
-<main class="container my-5">
-    <h1>Your Cart</h1>
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Product</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Total</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Product Name</td>
-                <td>$100</td>
-                <td>
-                    <input type="number" class="form-control" value="1" min="1">
-                </td>
-                <td>$100</td>
-                <td>
-                    <button class="btn btn-danger btn-sm">Remove</button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <div class="text-end">
-        <h4>Total: $100</h4>
-        <button class="btn btn-success">Checkout</button>
-    </div>
-</main>
+<div class="container my-5">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Trang chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Giỏ hàng</li>
+        </ol>
+    </nav>
+
+    @if (Model == null || !Model.Any())
+    {
+        <div class="alert alert-info text-center" role="alert">
+            Giỏ hàng của bạn đang trống. <a href="~/" class="alert-link">Tiếp tục mua sắm</a>.
+        </div>
+    }
+    else
+    {
+        <div id="success-message" class="alert alert-success text-center d-none" role="alert">
+            Đặt hàng thành công! Bạn sẽ được chuyển hướng...
+        </div>
+
+        <div class="form-group">
+            <span id="message" style="color:red"></span>
+        </div>
+        <table class="table table-bordered table-striped">
+            <thead class="table-primary text-center">
+                <tr>
+                    <th>Sản phẩm</th>
+                    <th>Số lượng</th>
+                    <th>Giá</th>
+                    <th>Thành tiền</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="align-middle">
+                            <img src="~/Image/Photo/@item.Photo" alt="image" class="img-thumbnail" style="width: 50px; height: 50px;">
+                            <span class="ms-2">@item.ProductName</span>
+                        </td>
+                        <td class="align-middle">
+                            <form action="~/Account/EditCartView" method="get" id="" class="d-flex align-items-center">
+                                <input type="hidden" name="@nameof(item.CartDetailID)" value="@item.CartDetailID">
+                                <input type="hidden" name="@nameof(item.ProductID)" value="@item.ProductID">
+                                <input type="number" min="1" name="@nameof(item.Quantity)" value="@item.Quantity" class="form-control form-control-sm w-50 me-2">
+                                <button type="submit" class="btn btn-primary btn-sm">Cập nhật</button>
+                            </form>
+                        </td>
+                        <td class="align-middle">@item.Price.ToString("N0") đ</td>
+                        <td class="align-middle">@item.Total.ToString("N0") đ</td>
+                        <td class="align-middle text-center">
+                            <a href="~/Account/DeleteCartDetail?cartID=@item.CartID&cartDetailID=@item.CartDetailID" class="btn btn-danger btn-sm">Xóa</a>
+                        </td>
+                    </tr>
+                    total += item.Total;
+                }
+            </tbody>
+        </table>
+
+        <div class="row mt-4">
+            <!-- Thông tin thanh toán -->
+            <div class="col-md-4">
+                <div class="border p-4 rounded bg-light shadow-sm">
+                    <h5 class="text-muted">Chi tiết thanh toán</h5>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span class="fw-bold">Tạm tính:</span>
+                        <span class="text-danger fw-bold">@string.Format("{0:N0}", total) đ</span>
+                    </div>
+                    <div class="d-flex justify-content-between mt-2">
+                        <span class="fw-bold">Vận chuyển:</span>
+                        <span class="text-danger fw-bold">0 đ</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <h5 class="fw-bold">Tổng tiền:</h5>
+                        <h5 class="text-danger fw-bold">@string.Format("{0:N0}", total) đ</h5>
+                    </div>
+                    <button class="btn btn-primary btn-lg w-100 mt-3" id="checkout-button">Đặt mua</button>
+                </div>
+            </div>
+
+            <!-- Form thông tin thanh toán -->
+            <div class="col-md-6">
+                <div id="checkout-form" class="d-none">
+                    <div class="border p-4 rounded bg-light">
+                        <div class="">
+                            <form action="~/Account/Checkout" method="post" id="frmOrderInit">
+                                <div class="mb-3">
+                                    <label for="fullName" class="form-label">Họ và tên</label>
+                                    <input type="text" class="form-control" id="fullName" name="FullName" value="@User.GetUserData().DisplayName" placeholder="Nhập họ và tên" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="address" class="form-label">Địa chỉ</label>
+                                    <textarea class="form-control" id="address" name="Address" rows="3" placeholder="Nhập địa chỉ giao hàng" required></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phoneNumber" class="form-label">Tỉnh thành</label>
+                                    <input type="text" class="form-control" id="phoneNumber" name="Province" placeholder="Tỉnh thảnh" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Xác nhận đặt mua</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    }
+</div>
+
+<script>
+    document.getElementById('checkout-button').addEventListener('click', function () {
+        const checkoutForm = document.getElementById('checkout-form');
+        checkoutForm.classList.toggle('d-none'); 
+        this.classList.toggle('d-none'); 
+    });
+
+</script>
+
+@section scripts {
+    <script>
+        
+
+    </script>
+}

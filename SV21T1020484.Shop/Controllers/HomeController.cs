@@ -52,8 +52,16 @@ namespace SV21T1020484.Shop.Controllers
             ApplicationContext.SetSessionData(PRODUCT_SEARCH_CONDITON, condition);
             return View(model);
         }
-
         public IActionResult Privacy()
+        {
+            return View();
+        }
+        public IActionResult AboutUs()
+        {
+            return View();
+        }
+
+        public IActionResult Services()
         {
             return View();
         }

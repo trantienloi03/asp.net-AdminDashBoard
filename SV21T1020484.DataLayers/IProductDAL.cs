@@ -77,5 +77,6 @@ namespace SV21T1020484.DataLayers
         long AddAttribute(ProductAttribute data);
         bool UpdateAttribute(ProductAttribute data);
         bool DeleteAttribute(long attributeID);
+        List<Product> getSimilarProduct(int categoryID);
     }
 }

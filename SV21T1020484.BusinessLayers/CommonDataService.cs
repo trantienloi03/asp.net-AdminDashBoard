@@ -13,6 +13,7 @@ namespace SV21T1020484.BusinessLayers
         private static readonly ICommonDAL<Employee> EmployeeDB;
         private static readonly ICommonDAL<Supplier> SupplierDB;
         private static readonly ICommonDAL<Category> CategoryDB;
+        private static readonly ICommonDAL<CustomerDTO> CustomerDTO;
 
         static CommonDataService()
         {
@@ -23,6 +24,7 @@ namespace SV21T1020484.BusinessLayers
             SupplierDB = new DataLayers.Sql.SupplierDAL(connectionString);
             CategoryDB = new DataLayers.Sql.CategoryDAL(connectionString);
             ProvinceDB = new DataLayers.Sql.ProviceDAL(connectionString);
+            CustomerDTO = new DataLayers.Sql.CustomerDTO_DAL(connectionString);
             
 
         }
@@ -50,6 +52,10 @@ namespace SV21T1020484.BusinessLayers
         public static int AddCustomer(Customer data)
         {
             return CustomerDB.Add(data);
+        }
+        public static int AddCustomerDTO(CustomerDTO data)
+        {
+            return CustomerDTO.Add(data);
         }
         public static bool UpdateCustomer(Customer data)
         {

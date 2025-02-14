@@ -44,7 +44,7 @@ namespace SV21T1020484.Shop
             app.UseStaticFiles();
              app.UseSession();
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
             app.UseSession();
             app.MapControllerRoute(

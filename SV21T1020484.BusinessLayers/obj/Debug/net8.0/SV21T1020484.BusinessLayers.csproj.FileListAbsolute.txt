@@ -15,3 +15,4 @@ D:\LTUDweb\SV21T1020484\SV21T1020484.BusinessLayers\bin\Debug\net8.0\SV21T102048
 D:\LTUDweb\SV21T1020484\SV21T1020484.BusinessLayers\bin\Debug\net8.0\SV21T1020484.DomainModels.pdb
 D:\LTUDweb\SV21T1020484\SV21T1020484.BusinessLayers\obj\Debug\net8.0\SV21T1020484.BusinessLayers.csproj.AssemblyReference.cache
 D:\LTUDweb\SV21T1020484\SV21T1020484.BusinessLayers\obj\Debug\net8.0\SV21T102.65B3064F.Up2Date
+D:\LTUDweb\SV21T1020484\SV21T1020484.BusinessLayers\obj\Debug\net8.0\SV21T1020484.BusinessLayers.sourcelink.json

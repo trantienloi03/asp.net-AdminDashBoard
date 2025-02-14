@@ -1,3 +1,112 @@
-﻿@{
+﻿@model SV21T1020484.DomainModels.Customer
+@{
 }
-Sửa thông tin cá nhân
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">Sửa thông tin cá nhân</h5>
+        </div>
+        <div class="card-body">
+            <form action="~/Account/SaveEditProfile" method="post" id="frmEditProfile">
+                <input type="hidden" name="CustomerID" value="@Model.CustomerID" />
+
+                <div class="mb-3">
+                    <label for="contactName" class="form-label">Tên hiển thị</label>
+                    <input type="text" id="contactName" name="ContactName" class="form-control" value="@Model.ContactName" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="address" class="form-label">Địa chỉ</label>
+                    <input type="text" id="address" name="Address" class="form-control" value="@Model.Address" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="province" class="form-label">Tỉnh thành</label>
+                    <select id="province" name="Province" class="form-select">
+                        @foreach (var p in SV21T1020484.BusinessLayers.CommonDataService.ListOfProvices())
+                        {
+                            if (p.ProvinceName == Model.Province)
+                            {
+                                <option selected value="@p.ProvinceName">@p.ProvinceName</option>
+                            }
+                            else
+                            {
+                                <option value="@p.ProvinceName">@p.ProvinceName</option>
+
+                            }
+                        }
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Số điện thoại</label>
+                    <input type="text" id="phone" name="Phone" class="form-control" value="@Model.Phone" required>
+                </div>
+
+                <div class="d-flex justify-content-end">
+                    <a href="/" class="btn btn-secondary me-2">Quay lại</a>
+                    <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $("#frmEditProfile").submit(function (e) {
+            e.preventDefault();
+            var url = $(this).prop("action");
+            var method = $(this).prop("method");
+            var data = $(this).serializeArray();
+
+            $.ajax({
+                url: url,
+                type: method,
+                data: data,
+                dataType: "json", // Thêm kiểu dữ liệu
+                error: function () {
+                    alert("Cập nhật không thành công!");
+                },
+                success: function (response) {
+                    if (response.success) {
+                        alert(response.message);
+                        //window.location.href = "/Account/Profile";
+                        location.reload();
+                    } else {
+                        alert("Lỗi: " + response.message);
+                    }
+                }
+            });
+        });
+    });
+
+</script>
+@* <script>
+    $(document).ready(function () {
+        $("#frmEditProfile").submit(function (e) {
+            e.preventDefault();
+            var url = $(this).prop("action");
+            var method = $(this).prop("method");
+            var data = $(this).serializeArray();
+
+            $.ajax({
+                url: url,
+                type: method,
+                data: data,
+                error: function () {
+                    alert("Cập nhật không thành công!");
+                },
+                success: function (data) {
+                    if (data !== "") {
+                        $("#message").html(data);
+                    }
+                    else {
+                        alert("Cập nhật thành công!");
+                        location.reload();
+                    }
+                }
+            })
+        });
+    })
+</script> *@
+

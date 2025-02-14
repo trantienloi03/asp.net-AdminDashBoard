@@ -1,4 +1,5 @@
-﻿using Dapper;
+﻿using Azure;
+using Dapper;
 using SV21T1020484.DomainModels;
 using System.Buffers;
 using System.Collections.Generic;
@@ -261,6 +262,24 @@ namespace SV21T1020484.DataLayers.Sql
                 connection.Close();
             }
             return productPhoto;
+        }
+
+        public List<Product> getSimilarProduct(int categoryID)
+        {
+            List<Product> products = new List<Product>();
+            using (var connection = OpenConnection())
+            {
+                string sql = @"SELECT TOP (10) *
+                              FROM [LiteCommerceDB].[dbo].[Products]
+                              Where CategoryID = @CategoryID";
+                var parameters = new
+                {
+                   CategoryID = categoryID
+                };
+                products = connection.Query<Product>(sql: sql, param: parameters, commandType: System.Data.CommandType.Text).ToList();
+                connection.Close();
+            }
+            return products;
         }
 
         public bool InUse(int ProductID)

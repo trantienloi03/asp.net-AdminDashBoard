@@ -17,9 +17,10 @@ namespace SV21T1020484.DataLayers
         public Cart GetByID(int cutomerID);
         public List<Cartdetail> GetDetailList(int cartID);
         public Cartdetail GetDetail(int cartID, int productID);
-        bool SaveDetail(int cartID, int productID, int quantity);
-        bool DeleteDetail(int cartID, int productID);
+        bool SaveDetail(int cartDetailID, int productID, int quantity);
+        bool DeleteDetail(int cartID,int cartDetailID);
         bool SaveCart(int customerID, int sum);
         public Cartdetail? checkProductExists(int cartID, int productID);
+        public List<ViewCart> GetViewCarts(int userID);
     }
 }

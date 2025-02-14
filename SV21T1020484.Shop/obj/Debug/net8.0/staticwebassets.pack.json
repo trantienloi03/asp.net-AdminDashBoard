@@ -5,6 +5,170 @@
       "PackagePath": "staticwebassets\\SV21T1020484.Shop.bundle.scp.css"
     },
     {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Banner\\1.png",
+      "PackagePath": "staticwebassets\\Image\\Banner\\1.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Banner\\2.png",
+      "PackagePath": "staticwebassets\\Image\\Banner\\2.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Banner\\3.png",
+      "PackagePath": "staticwebassets\\Image\\Banner\\3.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Features\\1.png",
+      "PackagePath": "staticwebassets\\Image\\Features\\1.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Features\\2.png",
+      "PackagePath": "staticwebassets\\Image\\Features\\2.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Features\\3.png",
+      "PackagePath": "staticwebassets\\Image\\Features\\3.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\1.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\1.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\10.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\10.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\11.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\11.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\12.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\12.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\13.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\13.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\14.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\14.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\15.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\15.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\16.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\16.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\17.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\17.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\18.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\18.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\19.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\19.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\2.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\2.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\20.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\20.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\21.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\21.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\22.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\22.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\23.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\23.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\24.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\24.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\25.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\25.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\26.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\26.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\27.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\27.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\28.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\28.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\3.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\3.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\4.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\4.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\5.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\5.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\6.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\6.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\638666070951876552-nv03 - Copy - Copy.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\638666070951876552-nv03 - Copy - Copy.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\638666070951876552-nv03.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\638666070951876552-nv03.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\638666138717323547-nv01 - Copy.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\638666138717323547-nv01 - Copy.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\638672012323070537-nophotoo.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\638672012323070537-nophotoo.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\638676932300358338-nv02.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\638676932300358338-nv02.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\7.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\7.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\8.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\8.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\9.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\9.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\macbook.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\macbook.png"
+    },
+    {
+      "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Photo\\nophotoo.png",
+      "PackagePath": "staticwebassets\\Image\\Photo\\nophotoo.png"
+    },
+    {
       "Id": "D:\\LTUDweb\\SV21T1020484\\SV21T1020484.Shop\\wwwroot\\Image\\Products\\638666070951876552-nv03 - Copy (2).png",
       "PackagePath": "staticwebassets\\Image\\Products\\638666070951876552-nv03 - Copy (2).png"
     },

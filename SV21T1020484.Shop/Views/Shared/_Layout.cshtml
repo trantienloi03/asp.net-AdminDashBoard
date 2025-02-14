@@ -6,11 +6,16 @@
     <title>Home Page</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" />
     <style>
+        .field-validation-error {
+            color: red;
+        }
         body {
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+            background-color:white;
         }
 
         main {
@@ -66,6 +71,38 @@
             border: none;
         }
 
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+            .card:hover {
+                transform: scale(1.05);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+
+        .card-body a {
+            color: #000;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .card-body a:hover {
+                color: #007bff;
+            }
+
+        .form-inline {
+            display: flex;
+            align-items: center; 
+            gap: 10px; 
+        }
+
+        .form-inline .form-control {
+                width: auto; 
+            }
+
+
+    
+
     </style>
 </head>
 <body>
@@ -86,6 +123,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap JS and dependencies (if not included globally) -->
 
 
     @await RenderSectionAsync("Scripts", required: false)

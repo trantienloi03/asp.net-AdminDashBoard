@@ -33,6 +33,26 @@ namespace SV21T1020484.DataLayers.Sql
             }
             return id;
         }
+        public int Init(Order data)
+        {
+            int id = 0;
+            using (var connection = OpenConnection())
+            {
+                var sql = @"insert into Orders(OrderTime,DeliveryProvince, DeliveryAddress, EmployeeID, Status)
+                            values(getdate(), @DeliveryProvince, @DeliveryAddress, @EmployeeID, @Status);
+                            select @@identity";
+                var parameters = new
+                {
+                    DeliveryProvince = data.DeliveryProvince,
+                    DeliveryAddress = data.DeliveryAddress,
+                    EmployeeID = data.EmployeeID,
+                    Status = SV21T1020484.DomainModels.Constants.ORDER_INIT
+                };
+                id = connection.ExecuteScalar<int>(sql: sql, param: parameters, commandType: System.Data.CommandType.Text);
+                connection.Close();
+            }
+            return id;
+        }
 
         public int Count(int status = 0, DateTime? fromTime = null, DateTime? toTime = null, string searchValue ="")
         {
@@ -158,6 +178,8 @@ namespace SV21T1020484.DataLayers.Sql
             return data;
         }
 
+        
+
         //public IList<Order> List(int page = 1, int pageSize = 0, int status = 0, DateTime? fromTime = null, DateTime? toTime = null, string searchValue = "")
         //{
         //    List<Order> list = new List<Order>();
@@ -270,6 +292,29 @@ namespace SV21T1020484.DataLayers.Sql
                     orderID = orderID
                 };
                 list = connection.Query<OrderDetail>(sql: sql, param: parameters, commandType: System.Data.CommandType.Text).ToList();
+                connection.Close();
+
+            }
+            return list;
+        }
+
+        public IList<ViewOrder> ListOrderByCustomerID(int customerID)
+        {
+            List<ViewOrder> list = new List<ViewOrder>();
+            using (var connection = OpenConnection())
+            {
+                var sql = @"
+                          SELECT dbo.Orders.OrderID, dbo.Customers.CustomerID, dbo.Orders.OrderTime, dbo.Orders.DeliveryAddress, dbo.Orders.DeliveryProvince, dbo.Orders.Status
+                          FROM     dbo.Customers INNER JOIN
+                          dbo.Orders ON dbo.Customers.CustomerID = dbo.Orders.CustomerID INNER JOIN
+                          dbo.OrderStatus ON dbo.Orders.Status = dbo.OrderStatus.Status
+				          where dbo.Customers.CustomerID = @CustomerID
+        ";
+                var parameters = new
+                {
+                   CustomerID = customerID
+                };
+                list = connection.Query<ViewOrder>(sql: sql, param: parameters, commandType: System.Data.CommandType.Text).ToList();
                 connection.Close();
 
             }

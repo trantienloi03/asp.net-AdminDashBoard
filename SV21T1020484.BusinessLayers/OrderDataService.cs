@@ -61,6 +61,30 @@ namespace SV21T1020484.BusinessLayers
             }
             return 0;
         }
+        public static int KhachHangDatHang(int customerID,
+                                   string deliveryProvince, string deliveryAddress,
+                                   IEnumerable<OrderDetail> details)
+
+        {
+            if (details.Count() == 0)
+                return 0;
+            Order data = new Order()
+            {
+                CustomerID = customerID,
+                DeliveryProvince = deliveryProvince,
+                DeliveryAddress = deliveryAddress
+            };
+            int orderID = orderDB.Add(data);
+            if (orderID > 0)
+            {
+                foreach (var item in details)
+                {
+                    orderDB.SaveDetail(orderID, item.ProductID, item.Quantity, item.SalePrice);
+                }
+                return orderID;
+            }
+            return 0;
+        }
         /// <summary>
         /// Hủy bỏ đơn hàng
         /// </summary>
@@ -205,6 +229,14 @@ namespace SV21T1020484.BusinessLayers
                 return orderDB.DeleteDetail(orderID, productID);
             }
             return false;
+        }
+        public static IList<ViewOrder> ListOrderByCustomerID(int customerID)
+        {
+            return orderDB.ListOrderByCustomerID(customerID);
+        }
+        public static bool UpdateOrder(Order data)
+        {
+            return orderDB.Update(data);
         }
     }
 }

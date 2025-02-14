@@ -195,6 +195,13 @@ namespace SV21T1020484.Web.Controllers
         }
         public IActionResult Accept(int id = 0)
         {
+            var order = OrderDataService.GetOrder(id);
+            if(order != null)
+            {
+                order.EmployeeID = Convert.ToInt32(User.GetUserData().UserId);
+            }
+            id = order.OrderID;
+            OrderDataService.UpdateOrder(order);
             bool result = OrderDataService.AcceptOrder(id);
             if (result == false)
             {

@@ -18,9 +18,14 @@ namespace SV21T1020484.BusinessLayers
             rowCount = productDB.Count(searchValue,categoryId,supplierId,minPrice,maxPrice);
             return productDB.List(page, pageSize, searchValue, categoryId, supplierId, minPrice, maxPrice);
         }
-        public static Product? GetProductById(int productId)
+        public static List<Product> getSimilarProducts(int categoryID)
         {
-            return productDB.Get(productId);
+            
+            return productDB.getSimilarProduct(categoryID);
+        }
+        public static Product? GetProductById(int ProductID)
+        {
+            return productDB.Get(ProductID);
         }
         public static int AddProduct(Product data)
         {
